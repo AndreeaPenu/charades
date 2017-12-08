@@ -15,7 +15,13 @@ class CreateCorrectAnswersTable extends Migration
     {
         Schema::create('correct_answers', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('session_id');
+            $table->integer('participator_id');
+            $table->integer('word_id');
             $table->timestamps();
+            $table->foreign('session_id')->references('id')->on('sessions')->onDelete('cascade');
+            $table->foreign('participator_id')->references('id')->on('participators')->onDelete('cascade');
+            $table->foreign('word_id')->references('id')->on('words')->onDelete('cascade');
         });
     }
 

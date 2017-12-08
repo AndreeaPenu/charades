@@ -15,7 +15,10 @@ class CreateWordsTable extends Migration
     {
         Schema::create('words', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('session_id');
+            $table->string('word');
             $table->timestamps();
+            $table->foreign('session_id')->references('id')->on('sessions')->onDelete('cascade');
         });
     }
 
