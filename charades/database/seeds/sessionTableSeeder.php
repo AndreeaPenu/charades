@@ -12,7 +12,7 @@ class sessionTableSeeder extends Seeder
     public function run()
     {
         //
-        DB::table('words')->insert(
+        DB::table('sessions')->insert(
             ['session_key' => 1]
         );
     }
