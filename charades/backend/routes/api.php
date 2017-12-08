@@ -18,5 +18,5 @@ use Illuminate\Http\Request;
 //});
 
 Route::group(['prefix' => 'v1'], function(){
-    Route::resource('words', 'wordController');
+    Route::get('words', 'wordController@index');
 });
