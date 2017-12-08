@@ -15,7 +15,7 @@ class CreateParticipatorsTable extends Migration
     {
         Schema::create('participators', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('session_id');
+            $table->integer('session_id')->unsigned();
             $table->timestamps();
             $table->foreign('session_id')->references('id')->on('sessions')->onDelete('cascade');
         });
