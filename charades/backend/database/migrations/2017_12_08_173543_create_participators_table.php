@@ -17,6 +17,8 @@ class CreateParticipatorsTable extends Migration
             $table->increments('id');
             $table->integer('session_id')->unsigned();
             $table->string('name');
+            $table->string('ip');
+            $table->integer("active")->default(0);
             $table->string('color');
             $table->timestamps();
             $table->foreign('session_id')->references('id')->on('sessions')->onDelete('cascade');
