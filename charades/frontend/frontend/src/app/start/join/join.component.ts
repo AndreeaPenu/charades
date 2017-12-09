@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {Router} from "@angular/router";
 import {Http} from "@angular/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-join',
@@ -19,6 +20,7 @@ export class JoinComponent implements OnInit {
     const username= form.value.username;
 
     this.http.get(`http://localhost:8000/api/v1/participators/`+ username +`/`+session_key).subscribe(response => {
+     const res = response.json();
       this.router.navigate(['game/'+session_key]);
     });
 

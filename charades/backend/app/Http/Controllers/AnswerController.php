@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\word;
 use Illuminate\Http\Request;
-use App\participator;
+use App\word;
+use App\answer;
+use Response;
+
 use Illuminate\Support\Facades\DB;
 
-class ParticipatorController extends Controller
+class AnswerController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,7 +18,8 @@ class ParticipatorController extends Controller
      */
     public function index()
     {
-        //
+   
+      
     }
 
     /**
@@ -24,7 +27,10 @@ class ParticipatorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-
+    public function create()
+    {
+        //
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -34,47 +40,27 @@ class ParticipatorController extends Controller
      */
     public function store( $username , $session_id)
     {
-        $id = DB::table('sessions')->where('session_key', '=', $session_id)->get();
-            $ip = request()->ip();
-            DB::table('participators')->insert([
-                'name' => $username,
-                'ip' => $ip,
-                'active' => 1,
-                'color' => 'red',
-                'session_id' => $id[0]->id,
-            ]);
-        return ['session_key'=>$session_id];
+        $randomAnswer = DB::table('words')
+        ->inRandomOrder()
+        ->first();
+   
+     
+            $id = DB::table('sessions')->where('session_key', '=', $session_id)->get();
+              
+                DB::table('answers')->insert([
+                    'choice_word' => $randomAnswer,
+                  
+                    'session_id' => $id[0]->id,
+                ]);
+    
+    
+        
+     
+          
+        
+       
+       
     }
-
-/*    public function winner(){
-        $randWord = $this->getRandomWord();
-        $winner = $this->checkIfWordIsCorrect($randWord,$givenWord);
-
-        if($winner){
-            $current_active = participator::all()->active(1);
-            $new_active = Participator::all()->active(0)->first();
-
-            $this->setActive($current_active,$new_active);
-        }
-    }
-
-    public function getRandomWord(){
-        $random_word = word::all()->random(1);
-        return $random_word;
-    }
-
-    public function checkIfWordIsCorrect($given_word,$correct_word){
-        if($given_word == $correct_word){
-            return true;
-        }else{
-            return false;
-        }
-    }
-
-    public function setActive(Participator $current_active ,Participator $new_active){
-        $current_active->active=0;
-        $new_active->active=1;
-    }*/
 
     /**
      * Display the specified resource.
