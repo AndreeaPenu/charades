@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\participator;
+use Illuminate\Support\Facades\DB;
 
 class ParticipatorController extends Controller
 {
@@ -22,13 +23,7 @@ class ParticipatorController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-      
-  
-           
-        
-    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -48,9 +43,7 @@ class ParticipatorController extends Controller
                 'color' => 'red',
                 'session_id' => $session_id,
             ]);
-        
-    
-      
+
 
     
  
