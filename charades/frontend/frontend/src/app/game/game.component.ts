@@ -13,8 +13,8 @@ sessionKey:any;
   ngOnInit() {
     this.route.params.subscribe(
         (params: Params) => {
-          this.sessionKey=+params['sessionkey'];
-          console.log(+params['sessionkey']);
+          this.sessionKey=params['sessionkey'];
+          console.log(params['sessionkey']);
 
         }
     );
