@@ -40,14 +40,14 @@ class ParticipatorController extends Controller
     public function store( $username , $session_id)
     {
  
-     
+        $id = DB::table('sessions')->where('session_key', '=', $session_id)->get();
             $ip = request()->ip();
             DB::table('participators')->insert([
                 'name' => $username,
                 'ip' => $ip,
                 'active' => 1,
                 'color' => 'red',
-                'session_id' => $session_id,
+                'session_id' => $id[0]->id,
             ]);
         
     
