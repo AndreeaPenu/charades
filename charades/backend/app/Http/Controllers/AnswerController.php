@@ -46,12 +46,12 @@ class AnswerController extends Controller
    
      
             $id = DB::table('sessions')->where('session_key', '=', $session_id)->get();
-              
+
                 DB::table('answers')->insert([
-                    'choice_word' => $randomAnswer,
+                    'choice_word' => $randomAnswer->word,
                     'session_id' => $id[0]->id,
                 ]);
-    
+
     
         
      
