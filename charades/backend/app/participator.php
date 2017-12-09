@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class participator extends Model
 {
     public $fillable = [
-        'name',
+        'name'
      
     ];
     public function answers() {
