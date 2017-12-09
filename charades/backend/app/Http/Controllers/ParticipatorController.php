@@ -46,7 +46,7 @@ class ParticipatorController extends Controller
         return ['session_key'=>$session_id];
     }
 
-    public function winner(){
+/*    public function winner(){
         $randWord = $this->getRandomWord();
         $winner = $this->checkIfWordIsCorrect($randWord,$givenWord);
 
@@ -74,7 +74,7 @@ class ParticipatorController extends Controller
     public function setActive(Participator $current_active ,Participator $new_active){
         $current_active->active=0;
         $new_active->active=1;
-    }
+    }*/
 
     /**
      * Display the specified resource.
