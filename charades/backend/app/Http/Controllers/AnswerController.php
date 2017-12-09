@@ -38,7 +38,7 @@ class AnswerController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store( $username , $session_id)
+    public function store( $session_id)
     {
         $randomAnswer = DB::table('words')
         ->inRandomOrder()
@@ -49,7 +49,6 @@ class AnswerController extends Controller
               
                 DB::table('answers')->insert([
                     'choice_word' => $randomAnswer,
-                  
                     'session_id' => $id[0]->id,
                 ]);
     

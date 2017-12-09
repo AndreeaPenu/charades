@@ -21,4 +21,5 @@ Route::group(['prefix' => 'v1'], function(){
     Route::get('words', 'wordController@index');
     Route::get('session/{username}', 'SessionController@start');
     Route::get('participators/{username}/{session_key}', 'ParticipatorController@store');
+    Route::get('answer/{session_id}', 'AnswerController@store');
 });
