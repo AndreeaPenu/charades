@@ -23,6 +23,8 @@ export class NewComponent implements OnInit {
     // console.log(this.service.startgame(username));
     this.http.get(`http://localhost:8000/api/v1/session/`+ username).subscribe(response =>{
       const res = response.json();
+
+      this.http.get('http://localhost:8000/api/v1/answer/' + res.session_key).subscribe();
       this.router.navigate(['game/'+res.session_key]);
     });
   }

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   styleUrls: ['./game.component.css']
 })
 export class GameComponent implements OnInit {
-sessionKey:any;
+  sessionKey:any;
   constructor(private http:Http, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -21,7 +21,9 @@ sessionKey:any;
   }
 
   answer(form: NgForm){
-    this.http.post('http://localhost:8000/api/v1/', {});
+    this.http.get('http://localhost:8000/api/v1/answer/' + this.sessionKey).subscribe(response => {
+
+    });
   }
 
 }
