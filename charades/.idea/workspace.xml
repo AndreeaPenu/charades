@@ -15,7 +15,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/app.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -68,8 +68,8 @@
       <file leaf-file-name="join.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/join/join.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="29" column="62" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="62" />
+            <state relative-caret-position="300">
+              <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
               <folding />
             </state>
           </provider>
@@ -79,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/new/new.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="625">
-              <caret line="25" column="83" lean-forward="false" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
+              <caret line="25" column="86" lean-forward="false" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -97,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.component.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="start.component.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+            <state relative-caret-position="600">
+              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -110,8 +110,8 @@
       <file leaf-file-name="start.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="17" column="86" lean-forward="false" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+            <state relative-caret-position="400">
+              <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -126,13 +126,13 @@
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/wordController.php" />
         <option value="$PROJECT_DIR$/backend/app/Http/Controllers/ParticipatorController.php" />
         <option value="$PROJECT_DIR$/frontend/frontend/src/app/game/game.component.html" />
-        <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.html" />
-        <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.css" />
         <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/new/new.component.css" />
         <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/join/join.component.css" />
+        <option value="$PROJECT_DIR$/frontend/frontend/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/join/join.component.html" />
         <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/new/new.component.html" />
-        <option value="$PROJECT_DIR$/frontend/frontend/src/app/app.component.html" />
+        <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.html" />
+        <option value="$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.css" />
       </list>
     </option>
   </component>
@@ -653,12 +653,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512773420691</updated>
       <workItem from="1512773421900" duration="1733000" />
-      <workItem from="1512777508216" duration="15843000" />
+      <workItem from="1512777508216" duration="16200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17576000" />
+    <option name="totallyTimeSpent" value="17933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -1060,22 +1060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/new/new.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/join/join.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -1092,26 +1076,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/join/join.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="29" column="62" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/new/new.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="83" lean-forward="false" selection-start-line="25" selection-start-column="83" selection-end-line="25" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="86" lean-forward="false" selection-start-line="17" selection-start-column="86" selection-end-line="17" selection-end-column="86" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1124,10 +1092,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/app.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/new/new.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="500">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/join/join.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="29" column="80" lean-forward="false" selection-start-line="29" selection-start-column="80" selection-end-line="29" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/new/new.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="86" lean-forward="false" selection-start-line="25" selection-start-column="86" selection-end-line="25" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="89" lean-forward="false" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/frontend/src/app/start/start.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
