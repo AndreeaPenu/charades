@@ -9,6 +9,7 @@ import { NewComponent } from './start/new/new.component';
 import { OverzichtComponent } from './start/overzicht/overzicht.component';
 import { GameComponent } from './game/game.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import {AppRoutingModule} from "./app-routing.module";
   imports: [
     BrowserModule,
     HttpModule,
+    FormsModule,
     AppRoutingModule,
 
   ],
