@@ -13,5 +13,12 @@ class wordController extends Controller
         return $words;
     }
 
+    public function getRandomWord(){
+        $random_word = word::all()->random(1);
+        return $random_word;
+    }
+
+
+
     //
 }
