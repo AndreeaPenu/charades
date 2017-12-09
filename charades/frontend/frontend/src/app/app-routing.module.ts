@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {StartComponent} from "./start/start.component";
 import {JoinComponent} from "./start/join/join.component";
 import {NewComponent} from "./start/new/new.component";
+import {OverzichtComponent} from "./start/overzicht/overzicht.component";
 
 
 
@@ -11,6 +12,7 @@ const appRoutes: Routes = [
   {path: 'home',component: StartComponent},
   {path: 'join',component: JoinComponent},
   {path: 'new',component: NewComponent},
+  {path: 'game/{session_key}',component: OverzichtComponent},
   ];
 
 @NgModule({
