@@ -29,7 +29,7 @@ class SessionController extends Controller
         else{
             print_r('bestaat al');
         }
-        return $string;
+        return ['session_key'=>$string];
 
 
     }

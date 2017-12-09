@@ -10,6 +10,7 @@ import { OverzichtComponent } from './start/overzicht/overzicht.component';
 import { GameComponent } from './game/game.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {FormsModule} from "@angular/forms";
+import {AppService} from "./start/app.service";
 
 
 @NgModule({
@@ -28,7 +29,7 @@ import {FormsModule} from "@angular/forms";
     AppRoutingModule,
 
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
