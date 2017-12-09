@@ -13,20 +13,13 @@ class wordTableSeeder extends Seeder
     {
         //
         DB::table('words')->insert(
-            ['session_id' => 1,
-            'word' => 'pasta'],
-            ['session_id' => 1,
-             'word' => 'banaan'],
-            ['session_id' => 1,
-             'word' => 'kanarie']
+            ['word' => 'pasta']
         );
         DB::table('words')->insert(
-            ['session_id' => 1,
-             'word' => 'banaan']
+            ['word' => 'banaan']
         );
         DB::table('words')->insert(
-            ['session_id' => 1,
-             'word' => 'kanarie']
+            ['word' => 'kanarie']
         );
     }
 }

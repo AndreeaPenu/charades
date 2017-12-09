@@ -43,6 +43,7 @@ class ParticipatorController extends Controller
                 'color' => 'red',
                 'session_id' => $id[0]->id,
             ]);
+        return ['session_key'=>$session_id];
     }
 
     public function winner(){

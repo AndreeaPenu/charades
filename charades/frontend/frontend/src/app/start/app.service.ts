@@ -8,9 +8,9 @@ export class AppService {
     constructor(private http: Http, private router: Router) {
     }
 
-    startgame(username: string) {
-        // return this.http.get(`http://localhost:8000/api/v1/session/`+ username).map(response =>response.json());
-
-
+    getWords(){
+        // this.http.get(`http://localhost:8000/api/v1/words`).subscribe(response => {
+        //     console.log(response)
+        // });
     }
 }

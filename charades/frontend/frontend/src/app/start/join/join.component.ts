@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from "@angular/forms";
 import {Http} from "@angular/http";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-join',
@@ -9,7 +10,7 @@ import {Http} from "@angular/http";
 })
 export class JoinComponent implements OnInit {
 
-  constructor(private http:Http) { }
+  constructor(private http:Http, private router:Router) { }
 
   ngOnInit() {
   }
@@ -17,7 +18,10 @@ export class JoinComponent implements OnInit {
     const session_key= form.value.session_key;
     const username= form.value.username;
 
-    this.http.get(`http://localhost:8000/api/v1/participators/`+ username +`/`+session_key).subscribe(response => {console.log(response)});
+    this.http.get(`http://localhost:8000/api/v1/participators/`+ username +`/`+session_key).subscribe(response => {
+     const res = response.json();
+      this.router.navigate(['game/'+session_key]);
+    });
 
 
   }
