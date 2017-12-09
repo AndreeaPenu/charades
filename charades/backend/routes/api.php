@@ -19,5 +19,6 @@ use Illuminate\Http\Request;
 
 Route::group(['prefix' => 'v1'], function(){
     Route::get('words', 'wordController@index');
-    Route::post('session', 'SessionController@start');
+    Route::get('session/{username}', 'SessionController@start');
+
 });
