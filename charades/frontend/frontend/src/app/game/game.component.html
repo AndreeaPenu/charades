@@ -12,22 +12,35 @@
 </head>
 <body>
 <div class="container">
-    {{sessionKey}}
-    <form action="" (ngSubmit)="Answer(f)" #f="ngForm">
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <h1>Welkom bij de game man.</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-12">
+      <div class="form-group">
+        <label>Deel deze sleutel met je vrienden</label>
+        <input type="text" class="form-control" name="session_key" [value]="sessionKey" disabled>
+      </div>
+    </div>
+  </div>
+
+  <form action="" (ngSubmit)="answer(f)" #f="ngForm">
       <div class="row">
-        <div class="col-xs-12">
-          <div class="form-group">
-            <label for="answer">uw antwoord</label>
-            <input type="text" id="answer" name="answer" class="form-control" ngModel>
+          <div class="col-md-12 col-sm-12">
+              <div class="form-group">
+                  <label for="answer">Uw antwoord</label>
+                  <input type="text" id="answer" name="answer" class="form-control" ngModel>
+              </div>
           </div>
-        </div>
       </div>
       <div class="row">
-        <div class="col-xs-12">
-          <button type="submit" class="btn btn-success">antwoord</button>
-        </div>
+          <div class="col-md-12 col-sm-12">
+              <button type="submit" class="btn btn-success">antwoord</button>
+          </div>
       </div>
-    </form>
+  </form>
 </div>
 
 
@@ -40,4 +53,6 @@
 <!--Bootstrap-->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
+
 </html>
+

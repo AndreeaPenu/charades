@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Params} from "@angular/router";
+import {NgForm} from "@angular/forms";
+import {Http} from "@angular/http";
 
 @Component({
   selector: 'app-game',
@@ -8,16 +10,18 @@ import {ActivatedRoute, Params} from "@angular/router";
 })
 export class GameComponent implements OnInit {
 sessionKey:any;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private http:Http, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.route.params.subscribe(
         (params: Params) => {
           this.sessionKey=params['sessionkey'];
-          console.log(params['sessionkey']);
-
         }
     );
+  }
+
+  answer(form: NgForm){
+    this.http.post('http://localhost:8000/api/v1/', {});
   }
 
 }
