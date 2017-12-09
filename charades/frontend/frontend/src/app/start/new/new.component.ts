@@ -10,7 +10,7 @@ import {AppService} from "../app.service";
   styleUrls: ['./new.component.css']
 })
 export class NewComponent implements OnInit {
-  newgameformgroup: FormGroup;
+
   key:any;
 
   constructor(private http:Http, private router:Router, private service: AppService) { }
